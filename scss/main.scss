@@ -28,6 +28,7 @@ p {
 
 .hero-scene{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content:"";
         position: absolute;
@@ -50,10 +51,4 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-    }
-}
-
-.text-justify {
-    text-align: justify;
-}
+        justify

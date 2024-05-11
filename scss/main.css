@@ -11994,6 +11994,7 @@ p {
 
 .hero-scene {
   position: relative;
+  margin-bottom: 15px;
 }
 .hero-scene::before {
   content: "";
@@ -12017,6 +12018,4 @@ p {
   justify-content: center;
 }
 
-.text-justify {
-  text-align: justify;
-}/*# sourceMappingURL=main.css.map */
+.text-justi
