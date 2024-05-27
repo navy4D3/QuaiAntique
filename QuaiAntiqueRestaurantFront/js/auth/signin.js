@@ -15,7 +15,7 @@ function checkCredentials(){
         //placer ce token en cookie
         setCookie(RoleCookieName, "admin", 7);
         //alert("Vous êtes connecté");
-        window.location.replace("/");
+        window.location.replace("/home");
     }
     else{
         mailInput.classList.add("is-invalid");
