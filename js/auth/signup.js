@@ -5,13 +5,17 @@ const inputMail = document.getElementById("EmailInput");
 const inputPassword = document.getElementById("PasswordInput");
 const inputValidationPassword = document.getElementById("ValidatePasswordInput");
 const btnValidation = document.getElementById("btn-validation-inscription");
+const formInscription = document.getElementById("formulaireInscription");
 
+const apiUrL = "http127.0.0.1:8000/api/"
 
 inputNom.addEventListener("keyup", validateForm); 
 inputPreNom.addEventListener("keyup", validateForm);
 inputMail.addEventListener("keyup", validateForm);
 inputPassword.addEventListener("keyup", validateForm);
 inputValidationPassword.addEventListener("keyup", validateForm);
+
+btnValidation.addEventListener("click", InscrireUtilisateur);
 
 
 //Function permettant de valider tout le formulaire
@@ -88,3 +92,23 @@ function validateConfirmationPassword(inputPwd, inputConfirmPwd){
         return false;
     }
 }
+
+// function InscrireUtilisateur () {
+//     const myHeaders = new Headers();
+//     myHeaders.append("Content-Type", "application/json");
+
+//     const raw = JSON.stringify({
+//     "firstName": "Thomas2",
+//     "lastName": "Dupont2",
+//     "email": "thomas3@email.com",
+//     "password": "Azerty22"
+//     });
+
+//     const requestOptions = {
+//     method: "POST",
+//     headers: myHeaders,
+//     body: raw,
+//     redirect: "follow"
+//     };
+
+//     fetch("http://127.0.0.1:8000/ap
