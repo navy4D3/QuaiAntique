@@ -91,29 +91,6 @@ function validateConfirmationPassword(inputPwd, inputConfirmPwd){
     }
 }
 
-// function InscrireUtilisateur () {
-//     const myHeaders = new Headers();
-//     myHeaders.append("Content-Type", "application/json");
-
-//     const raw = JSON.stringify({
-//     "firstName": "Thomas2",
-//     "lastName": "Dupont2",
-//     "email": "thomas3@email.com",
-//     "password": "Azerty22"
-//     });
-
-//     const requestOptions = {
-//     method: "POST",
-//     headers: myHeaders,
-//     body: raw,
-//     redirect: "follow"
-//     };
-
-//     fetch("http://127.0.0.1:8000/api/registration", requestOptions)
-//     .then((response) => response.text())
-//     .then((result) => console.log(result))
-//     .catch((error) => console.error(error));
-// }
 
 function InscrireUtilisateur () {
     // Crée un nouvel objet FormData à partir du formulaire contenu dans la variable "formInscription"
