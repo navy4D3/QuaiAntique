@@ -13,7 +13,8 @@ function checkCredentials(){
     let dataForm = new FormData(formConnexion);
     
     let myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json","Access-Control-Allow-Origin: *");
+    myHeaders.append("Access-Control-Allow-Origin", "*");
+    myHeaders.append("Content-Type", "application/json");
     let raw = JSON.stringify({
         "username": dataForm.get("Email"),
         "password": dataForm.get("Password")
