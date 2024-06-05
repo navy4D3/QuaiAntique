@@ -13,10 +13,6 @@ function checkCredentials(){
     let dataForm = new FormData(formConnexion);
     
     let myHeaders = new Headers();
-    myHeaders.append("Access-Control-Allow-Origin", "http://localhost:3000");
-    myHeaders.append("Access-Control-Allow-Origin", "https://formationstudiyr.alwaysdata.net/connexion");
-    myHeaders.append('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    myHeaders.append('Access-Control-Allow-Headers', 'Content-Type');
     myHeaders.append("Content-Type", "application/json");
     let raw = JSON.stringify({
         "username": dataForm.get("Email"),
